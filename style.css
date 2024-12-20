@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    background-color: beige;
+}
+h1{
+    text-align:center;
+    font-size: 50px;
+    padding: 20px;
+   
+}
+img{
+    width:100%;
+    height:100%;   
+}
+.grid{
+  display:grid;
+  gap:10px 10px;
+  grid-template-columns:repeat(3,1fr);
+  grid-auto-rows:200px;
+  border:5px solid black;
+
+}       
+.box{
+    transition: all 3s linear 1s ;
+}
+.box:hover{
+    transform:scale(1.5); 
+}
+.zero{
+   grid-row:span 3;  
+}
+.nine{
+    grid-row:span 3;  
+}
+
